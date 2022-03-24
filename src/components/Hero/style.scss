@@ -1,0 +1,50 @@
+@import '../../styles/breakpoints.scss';
+
+.intro-container {
+  height: 80vh;
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 0 5vw;
+}
+
+.intro {
+  color: rgb(228, 228, 228);
+  padding-top: 15%;
+}
+
+.intro h1 {
+  font-size: 90px;
+  font-weight: 600;
+
+  @include media('<=desktop') {
+    font-size: 70px;
+  }
+  @include media('<=tablet') {
+    font-size: 50px;
+  }
+  @include media('<=phone') {
+    font-size: 40px;
+  }
+}
+
+.intro h3 {
+  font-size: clamp(20px, 5vw, 25px);
+}
+
+.name-intro {
+  color: var(--blueish);
+  margin: 0 auto;
+}
+
+.name-intro-desc {
+  color: rgb(228, 228, 228);
+  margin: 0 auto;
+}
+
+.lineChildren {
+  transform: translate(0, 500px);
+}
+
+.lineParent {
+  overflow: hidden;
+}

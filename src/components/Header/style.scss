@@ -1,0 +1,68 @@
+@import '../../styles/breakpoints.scss';
+
+li, a, button {
+    font-weight: 500;
+    font-size: clamp(12px, 5vw, 18px);
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+
+    @include media('<=tablet') {
+        font-size: 14px;
+      }
+      @include media('<=phone') {
+        font-size: 12px;
+      }
+}
+
+header img {
+    width: 160px;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(9, 9, 9);
+    min-height: 5vh;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+    cursor: none;
+}
+
+.lineChildren {
+    transform: translate(0, 10px);
+  }
+
+.lineChildren {
+    overflow: hidden;
+  }
