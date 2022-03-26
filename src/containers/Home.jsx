@@ -59,7 +59,7 @@ const Home = () => {
 
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       {preloader ? (
         <div className="loader-wrapper absolute">
           {/* <h1>Alex Borges</h1> */}
@@ -74,7 +74,7 @@ const Home = () => {
           <Header />
           <Hero />
           <About />
-          <ProjectGallery />
+          {/* <ProjectGallery /> */}
           <Skills />
           <Contact />
           <Footer />
