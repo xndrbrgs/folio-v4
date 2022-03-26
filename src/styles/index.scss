@@ -1,45 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 
 * {
     box-sizing: border-box;
-    // cursor: none;
     font-family: 'Barlow', sans-serif;
+    margin: 0;
 }
 
 :root {
     --blueish:  rgba(0,136,169,1);
     --nicewhite: rgb(228, 228, 228);
-    --primary: #fba754;
-    --pink: #ef3c66;
-    --off-white: #f7f8fb;
-    --white: #fff;
-    --black: #111;
-    --dark-gray: #555;
-    --border: #ddd;
-    --bold-font: 500;
-    --body: 2rem;
-    --h1: 12rem;
-    --h2: 7.2rem;
-    --h3: 3.6rem;
-    --h4: 2.4rem;
-    --ico-dimension: 8rem;
-    --gap-12: 12rem;
-    --gap-6: 6rem;
-    --gap-4: 4rem;
-    --gap-3: 3rem;
-    --nav-height: 10rem;
-    --loading-scale: 25;
 }
 
 html {
     scroll-behavior: smooth;
     height: 100%;
 }
+
 
 .absolute {
     position: fixed;
