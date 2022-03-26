@@ -1,15 +1,33 @@
 @import '../../styles/breakpoints.scss';
 
 .intro-container {
-  height: 100vh;
-  margin: 0px auto;
-  max-width: 1000px;
-  padding: 0 5vw;
+  overflow: hidden;
+  padding-top: 22rem;
+  padding-bottom: 22rem;
+
+  @include media('<=1200px') {
+    padding-bottom: calc(var(--gap-12) + var(--nav-height));
+    padding-top: calc(var(--gap-12) + var(--nav-height));
+  }
+  @include media('<=800px') {
+    padding-bottom: var(--gap-12);
+  }
+
+  .wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+
+
+    @include media('>=1540px') {
+      max-width: 1520px;
+    }
+  }
 }
 
 .intro {
-  color: rgb(228, 228, 228);
-  padding-top: 15%;
+  color: black;
 }
 
 .intro h1 {
@@ -37,7 +55,7 @@
 }
 
 .name-intro-desc {
-  color: rgb(228, 228, 228);
+  color: black;
   margin: 0 auto;
 }
 

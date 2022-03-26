@@ -17,12 +17,48 @@ export default function Header() {
       linesClass: "lineChildren",
     });
 
+    const splitHome = new SplitText(".home-button", {
+      type: "lines",
+      linesClass: "lineChildren",
+    });
+
+    const splitHB = new SplitText(".mobile-button", {
+      type: "lines",
+      linesClass: "lineChildren",
+    });
+
     const splitParent = new SplitText(".nav_links", {
       type: "lines",
       linesClass: "lineParent",
     });
 
+    const splitParentHome = new SplitText(".home-button", {
+      type: "lines",
+      linesClass: "lineParent",
+    });
+
+    const splitParentHB = new SplitText(".mobile-button", {
+      type: "lines",
+      linesClass: "lineParent",
+    });
+
     gsap.to(split.lines, {
+      duration: 1,
+      y: 0,
+      opacity: 1,
+      stagger: 0.1,
+      ease: "power2",
+    });
+
+    gsap.to(splitHome.lines, {
+      duration: 1,
+      y: 0,
+      opacity: 1,
+      stagger: 0.1,
+      ease: "power2",
+    });
+
+    gsap.to(splitHB.lines, {
       duration: 1,
       y: 0,
       opacity: 1,
@@ -38,9 +74,6 @@ export default function Header() {
             Home
           </a>
           <ul className="nav_links">
-            <li>
-              <a href="#about-me">About Me</a>
-            </li>
             <li>
               <a href="#contact">Contact</a>
             </li>

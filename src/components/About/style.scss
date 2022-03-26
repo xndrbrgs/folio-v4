@@ -1,12 +1,11 @@
 .about-me {
-  color: rgb(228, 228, 228);
+  color: black;
   height: 100vh;
   margin: 0 0 150px 0;
   padding: 0 5vw;
 }
 
 .about-me h1 {
-  padding: 80px 0;
   font-size: clamp(20px, 8vw, 60px);
   font-weight: 600;
   color: rgba(0, 136, 169, 1);
@@ -19,8 +18,18 @@
   }
 }
 
+.bolden-p {
+  padding: 10px 0;
+  font-size: var(--h3);
+}
+
+.smaller-p {
+  padding: 10px 0;
+  font-size: var(--h4);
+  margin-top: var(--gap-3);
+}
+
 .about-me p {
-  font-size: clamp(20px, 8vw, 60px);
   line-height: 1.12;
   clip-path: inset(100% 0% 0% 0%);
   transition: clip-path 1.5s cubic-bezier(0.77, 0, 0.175, 1);

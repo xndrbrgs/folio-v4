@@ -1,51 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
 * {
-    box-sizing: border-box;
-    font-family: 'Barlow', sans-serif;
-    margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  margin: 0;
 }
 
 :root {
-    --blueish:  rgba(0,136,169,1);
-    --nicewhite: rgb(228, 228, 228);
+  --blueish: rgba(0, 136, 169, 1);
+  --nicewhite: rgb(228, 228, 228);
+  --primary: #fba754;
+  --pink: #ef3c66;
+  --off-white: #f7f8fb;
+  --white: #fff;
+  --black: #111;
+  --dark-gray: #555;
+  --border: #ddd;
+  --bold-font: 500;
+  --body: 2rem;
+  --h1: 12rem;
+  --h2: 7.2rem;
+  --h3: 3.6rem;
+  --h4: 2.4rem;
+  --ico-dimension: 8rem;
+  --gap-12: 12rem;
+  --gap-6: 6rem;
+  --gap-4: 4rem;
+  --gap-3: 3rem;
+  --nav-height: 10rem;
+  --loading-scale: 25;
+
+  @media (max-width: 1000px) {
+    --h1: 9rem;
+    --h2: 6.4rem;
+    --h3: 3.2rem;
+    --gap-12: 10rem;
+    --gap-6: 5rem;
+    --gap-4: 3rem;
+    --gap-3: 2.5rem;
+  }
+
+  @media (max-width: 800px) {
+    --h1: 7.2rem;
+    --h2: 5.6rem;
+    --h3: 3rem;
+    --gap-12: 9rem;
+    --gap-6: 4.5rem;
+    --gap-4: 2.8rem;
+    --gap-3: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    --nav-height: 8rem;
+    --body: 1.9rem;
+    --h1: 12vw;
+    --h2: 4.2rem;
+    --h3: 2.5rem;
+    --h4: 2.2rem;
+    --ico-dimension: 7rem;
+    --gap-12: 8rem;
+    --gap-6: 4rem;
+    --gap-4: 2.4rem;
+    --gap-3: 2rem;
+  }
 }
 
 html {
-    scroll-behavior: smooth;
-    height: 100%;
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
-
 .absolute {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgb(9, 9, 9);
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(9, 9, 9);
+  z-index: 1;
+}
+
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: "all 0.25s ease-in-out";
+  background-color: rgb(9, 9, 9);
+  color: #dbd8d6;
+  h1 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
   }
-  
-  .loader-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: "all 0.25s ease-in-out";
-    background-color: rgb(9, 9, 9);
-    color: #dbd8d6;
-    h1 {
-      font-size: 1.5vw;
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-    h2 {
-      font-size: 1.5vw;
-  
-      text-transform: uppercase;
-      font-style: italic;
-      margin-top: 10px;
-    }
+  h2 {
+    font-size: 1.5vw;
+
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 10px;
   }
+}
