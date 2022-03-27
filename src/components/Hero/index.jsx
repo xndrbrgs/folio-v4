@@ -7,12 +7,12 @@ export default function Hero() {
   useEffect(() => {
     const split = new SplitText('.intro', {
       type: 'lines',
-      linesClass: 'lineChildren'
+      linesclassName: 'lineChildren'
     });
 
     const splitParent = new SplitText('.intro', {
       type: 'lines',
-      linesClass: 'lineParent'
+      linesclassName: 'lineParent'
     });
 
     gsap.to(split.lines, {
@@ -24,12 +24,12 @@ export default function Hero() {
     })
   }, [])
   return (
-    <div class="intro-container" id="main" data-scroll-section>
+    <div className="intro-container" id="main" data-scroll-section>
       <div className="wrapper">
-        <div class="intro">
+        <div className="intro">
           <h3>Hi, my name is</h3>
-          <h1 class="name-intro">Alex Borges.</h1>
-          <h1 class="name-intro-desc">I am a full-stack web developer.</h1>
+          <h1 className="name-intro">Alex Borges.</h1>
+          <h1 className="name-intro-desc">I am a full-stack web developer.</h1>
         </div>
       </div>
       </div>
