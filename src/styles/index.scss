@@ -22,6 +22,7 @@
   --h2: 7.2rem;
   --h3: 3.6rem;
   --h4: 2.4rem;
+  --h5: 1.6rem;
   --ico-dimension: 8rem;
   --gap-12: 12rem;
   --gap-6: 6rem;
@@ -68,6 +69,7 @@
 html {
   scroll-behavior: smooth;
   height: 100%;
+  font-size: 62.5%;
 }
 
 .absolute {

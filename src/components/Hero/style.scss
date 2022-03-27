@@ -26,27 +26,13 @@
   }
 }
 
-.intro {
-  color: black;
-}
-
 .intro h1 {
-  font-size: 90px;
+  font-size: var(--h1);
   font-weight: 600;
-
-  @include media('<=desktop') {
-    font-size: 70px;
-  }
-  @include media('<=tablet') {
-    font-size: 50px;
-  }
-  @include media('<=phone') {
-    font-size: 40px;
-  }
 }
 
 .intro h3 {
-  font-size: clamp(20px, 5vw, 25px);
+  font-size: var(--h3);
 }
 
 .name-intro {
@@ -55,7 +41,6 @@
 }
 
 .name-intro-desc {
-  color: black;
   margin: 0 auto;
 }
 
