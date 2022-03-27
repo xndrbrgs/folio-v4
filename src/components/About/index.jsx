@@ -32,8 +32,11 @@ export default function About() {
           I am a full-stack creative developer based in Orlando, Florida. I am a Biomedical Sciences graduate who later switched to the amazing world of web development.
         </p>
         <p data-scroll className="smaller-p">
-          I specialize in creating integrative and intuitive code that enables a placid user experience.    
+          I specialize in creating integrative and intuitive code that enables a placid user experience. 
           My development stack is focused on performace and accessibility, making any user feel delighted with their site interactions.     
+        </p>
+        <p data-scroll className="smaller-p">
+        Interested in the entire web development spectrum and working on ambitious projects with positive people.     
         </p>
         </section>
       </div>
