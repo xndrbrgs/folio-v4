@@ -51,3 +51,15 @@
 .lineParent {
   overflow: hidden;
 }
+
+.spacer {
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .back-layer {
+    background-image: url('../../images/circle-scatter-haikei.svg');
+  }
+}

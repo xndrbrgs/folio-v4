@@ -12,6 +12,7 @@ import ProjectGallery from '../components/ProjectGallery'
 import Skills from '../components/Skills'
 import Footer from '../components/Footer'
 import Contact from '../components/Contact'
+import Projects from '../components/NewProjects'
 // import SideBar from '../components/SideBar'
 
 import useLocoScroll from "../hooks/useLocoScroll";
@@ -71,13 +72,14 @@ const Home = () => {
           data-scroll-container
           ref={ref}
         >
-          <Header />
-          <Hero />
+          {/* <Header /> */}
+          {/* <Hero /> */}
+          <Projects />
           {/* <About /> */}
           {/* <ProjectGallery /> */}
-          <Skills />
-          <Contact />
-          <Footer />
+          {/* <Skills /> */}
+          {/* <Contact /> */}
+          {/* <Footer /> */}
         </div>
       )}
     </>
