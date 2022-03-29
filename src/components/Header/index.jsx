@@ -77,6 +77,9 @@ export default function Header() {
             <li>
               <a href="#contact">Contact</a>
             </li>
+            <li>
+              <a href="about-me">About Me</a>
+            </li>
             <a className="resume-button" href="#">
               <button>Resume</button>
             </a>

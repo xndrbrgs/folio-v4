@@ -73,7 +73,7 @@ const Home = () => {
         >
           <Header />
           <Hero />
-          <About />
+          {/* <About /> */}
           {/* <ProjectGallery /> */}
           <Skills />
           <Contact />
