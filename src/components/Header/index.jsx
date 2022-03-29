@@ -67,7 +67,7 @@ export default function Header() {
     });
   });
   return (
-    <header data-scroll-section>
+    <header>
       <nav className="navbar">
         <div className="wrapper">
           <a className="home-button" href="/">

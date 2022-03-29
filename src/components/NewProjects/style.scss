@@ -1,5 +1,10 @@
 @import '../../styles/breakpoints.scss';
 
+.projects {
+    background-color: rgb(247,248,251);
+    padding: var(--gap-12) 0;
+}
+
 a, a:visited, a:hover {
 	text-decoration: none;
 }
@@ -8,50 +13,90 @@ li {
 	list-style: none;
 }
 
-nav {
-	min-height: 100vh;
+.navbar-pro {
 	overflow: hidden;
-	display:grid;
-	place-items:center;
+	display: grid;
+    place-items:center;
 }
 
-nav ul {
+.heading {
+    font-size: var(--h2);
+    padding: 0 5vw;  
+    font-weight: 600;
+    color: rgba(0,136,169,1);
+    text-transform: uppercase;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    
+    .descr {
+        font-size: var(--h5);
+        color: black;
+        width: 60%;
+        z-index: 100;
+        margin-top: 10px;
+    }
+    
+    #icon {
+        z-index: 100;
+        font-size: var(--h3);
+        transition: all 0.3s ease 0s;
+        color: rgba(0,136,169,1);
+        margin: 0 30px;
+
+        @include media('<=800px') {
+            margin: 20px 30px 0 0;
+          }
+    }
+    
+    #icon:hover {
+        z-index: 100;
+       color: rgba(0,136,169,0.8);
+       transform: translate(0, -10px);
+    }
+
+    @include media('<=800px') {
+        justify-content: center;
+        flex-direction: column;
+      }
+}
+
+.navbar-pro ul {
 	width: 80%;
 }
 
-nav ul li {
-	border-bottom: solid #ffffff .05rem;
+.navbar-pro ul li {
+	border-bottom: solid black .05rem;
 	position: relative;
-	z-index: 10;
+	z-index: 100;
 }
 
-nav ul li .link{
-	display: flex;
+.navbar-pro ul li .link{
 	padding: 4rem 0 2rem 0;
 	z-index: 10;
-	justify-content:space-between;
 }
 
-nav ul li .link span {
+.navbar-pro ul li .link span {
 	display: block;
-	font-weight: 500;
-	z-index: 10;
-	mix-blend-mode: difference;
+	font-weight: 600;
+	z-index: 100;
+    color: black;
 	display: inline-block;
 	position: relative;
-	color: white;
-	font-size: 4rem;
+	font-size: var(--h3);
 	text-transform: uppercase;
 }
-nav ul li .link > img {
+.navbar-pro ul li .link > img {
 	mix-blend-mode: difference;
 	z-index: 10;
 }
-
 
 .hover-reveal {
 	position: absolute;
-	width: 300px;
+	width: 400px;
 	height: 400px;
 	top: 50%;
 	left: 50%;
@@ -66,20 +111,20 @@ nav ul li .link > img {
 .hover-reveal img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	position: relative;
 	transition: transform .4s ease-out;
 }
 
 
 @media (max-width: 768px) {
-	nav ul {
+	.navbar-pro ul {
 		width: 93%;
 	}
-	nav ul li a span {
+	.navbar-pro ul li a span {
 		font-size: 2.5rem;
 	}
-	nav ul li a > img {
+	.navbar-pro ul li a > img {
 		height: 18px;
 	}
 	.hover-reveal {

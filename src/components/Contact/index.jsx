@@ -3,14 +3,14 @@ import "./style.scss";
 
 export default function Contact() {
   return (
-    <div className="contact" data-scroll-section>
+    <div className="contact">
       <div className="contact-header">
-        <h1 data-scroll>Contact Me</h1>
+        <h1>Contact Me</h1>
         <h2>
               Let's Work Together
           </h2>
       </div>
-      <div className="contact-form" data-scroll>
+      <div className="contact-form">
         <form id="contact" autoComplete="off">
           <ul>
               <li className="name side">

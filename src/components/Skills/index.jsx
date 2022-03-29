@@ -25,10 +25,10 @@ import graphqlsvg from './images/graphql.svg'
 
 export default function Skills() {
   return (
-    <div className="skills" id="skills" data-scroll-section>
+    <div className="skills" id="skills" >
       <div>
-        <h1 data-scroll>Skills</h1>
-        <div className="skills-tree" data-scroll>
+        <h1>Skills</h1>
+        <div className="skills-tree" >
           <div className="skill">
             <div className="skill-title">
               <h2>Javascript</h2>
