@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
 import gsap from 'gsap';
 import SplitText from '../../utils/Split3.min';
-import Person from '../../images/person';
 import './style.scss';
+import Person from '../../images/Person.svg'
 
 export default function About() {
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function About() {
   }, [])
   return (
     <div className="about-me" id="about-me" >
-      <div className="wrapper">
+      <div className="about-wrapper">
         <section className="about-section">
         <h1>Alex Borges</h1>
         <p className="bolden-p">
@@ -41,7 +41,7 @@ export default function About() {
         </p>
         </section>
         <div className="person">
-          <Person />
+          <img src={Person} className='person-svg'/>
         </div>
       </div>
     </div>

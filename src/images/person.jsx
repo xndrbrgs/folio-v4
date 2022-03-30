@@ -3,8 +3,8 @@ import React from "react";
 export default function Person() {
   return (
     <svg
-      width="600"
-      height="600"
+      width='600'
+      height="800"
       viewBox="0 0 994 1349"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
