@@ -10,7 +10,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import ProjectGallery from '../components/ProjectGallery'
 import Skills from '../components/Skills'
-import Footer from '../components/Footer'
+import Footer from '../components/Footer/footer'
 import Contact from '../components/Contact'
 import Projects from '../components/NewProjects'
 
@@ -23,7 +23,6 @@ const Home = () => {
           {/* <About /> */}
           {/* <ProjectGallery /> */}
           <Skills />
-          <Contact />
           <Footer />
     </>
   );

@@ -31,16 +31,26 @@ export default function Skills() {
         <div className="skills-tree" >
           <div className="skill">
             <div className="skill-title">
-              <h2>Javascript</h2>
+              <h2>HTML & CSS</h2>
+              <p>Interactive Experiences and Responsive Layouts</p>
+            </div>
+            <div className="skill-pictures">
+              <div className="skill-svg">
+                <img src={html} alt="js" />
+                <img src={css} alt="js" />
+                <img src={sasssvg} alt="js" />
+              </div>
+            </div>
+          </div>
+          <div className="skill">
+            <div className="skill-title">
+              <h2>JavaScript</h2>
               <p>Frontend Development and Single-Page Apps</p>
             </div>
             <div className="skill-pictures">
               <div className="skill-svg">
                 <img src={js} alt="js" />
                 <img src={reactsvg} alt="js" />
-                <img src={html} alt="js" />
-                <img src={css} alt="js" />
-                <img src={sasssvg} alt="js" />
               </div>
             </div>
           </div>
