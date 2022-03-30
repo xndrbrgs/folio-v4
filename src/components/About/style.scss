@@ -2,22 +2,14 @@
 
 .about-me {
   color: black;
-  height: 100vh;
-  margin: 0 0 150px 0;
-  padding: 0 5vw;
+  padding: var(--gap-12) 5vw;
 }
 
 .about-me h1 {
-  font-size: clamp(20px, 8vw, 60px);
+  font-size: var(--h1);
   font-weight: 600;
   color: rgba(0, 136, 169, 1);
   text-transform: uppercase;
-  clip-path: inset(100% 0% 0% 0%);
-  transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
-
-  &.is-reveal {
-    clip-path: inset(0% 0% 0% 0%);
-  }
 }
 
 .wrapper {
@@ -25,6 +17,7 @@
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
+  display: flex;
 
   @include media('>=1540px') {
     max-width: 1520px;
@@ -53,12 +46,6 @@
 
 .about-me p {
   line-height: 1.12;
-  clip-path: inset(100% 0% 0% 0%);
-  transition: clip-path 1.5s cubic-bezier(0.77, 0, 0.175, 1);
-
-  &.is-reveal {
-    clip-path: inset(0% 0% 0% 0%);
-  }
 }
 
 .lineChildren {

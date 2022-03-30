@@ -17,11 +17,11 @@ import Projects from '../components/NewProjects'
 const Home = () => {
   return (
     <>
+          <CustomCursor />
           <Header />
           <Hero />
           <Projects />
           {/* <About /> */}
-          {/* <ProjectGallery /> */}
           <Skills />
           <Footer />
     </>
