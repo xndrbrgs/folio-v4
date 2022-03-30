@@ -23,6 +23,7 @@ const routes = [
 const Home = () => {
   return (
     <>
+      <CustomCursor />
 			<Header />
 			<div className="App">
 				{routes.map(({ path, Component }) => (

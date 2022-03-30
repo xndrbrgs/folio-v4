@@ -75,10 +75,10 @@ export default function Header() {
           </a>
           <ul className="nav_links">
             <li>
-              <a href="#contact">Contact</a>
+              <a href="about-me">About Me</a>
             </li>
             <li>
-              <a href="about-me">About Me</a>
+              <a href="mailto:aborgescolon@gmail.com">Contact Me</a>
             </li>
             <a className="resume-button" href="#">
               <button>Resume</button>
