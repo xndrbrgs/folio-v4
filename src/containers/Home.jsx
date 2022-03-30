@@ -1,29 +1,37 @@
 import React, { useState } from 'react'
 import { useEffect } from "react";
 import { useRef } from "react";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import '../styles/index.scss'
 
+// Components 
 import {CustomCursor} from '../CustomCursor'
 import Header from '../components/Header'
-import Hero from '../components/Hero'
-import About from '../components/About'
-import ProjectGallery from '../components/ProjectGallery'
-import Skills from '../components/Skills'
 import Footer from '../components/Footer/footer'
-import Contact from '../components/Contact'
-import Projects from '../components/NewProjects'
+
+// Pages 
+import Main from '../pages/Main'
+import AboutMe from '../pages/AboutMe'
+
+
+const routes = [
+	{ path: '/', name: 'Main', Component: Main },
+	{ path: '/about-me', name: 'AboutMe', Component: AboutMe }
+];
 
 const Home = () => {
   return (
     <>
-          <CustomCursor />
-          <Header />
-          <Hero />
-          <Projects />
-          {/* <About /> */}
-          <Skills />
-          <Footer />
+			<Header />
+			<div className="App">
+				{routes.map(({ path, Component }) => (
+					<Route key={path} exact path={path}>
+						<Component />
+					</Route>
+				))}
+			</div>
+			<Footer />
     </>
   );
 };
