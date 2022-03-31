@@ -1,46 +1,26 @@
 import React, { useEffect, useRef } from "react";
-import { gsap, Power2 } from "gsap";
+import { gsap } from "gsap";
 import "./style.scss";
 
 export default function Hero() {
-  let heroAnimation = useRef(null);
-  let h3Anim = useRef(null);
-  let h1Anim = useRef(null);
-
+  let line1 = useRef(null);
+  let line2 = useRef(null);
+  let line3 = useRef(null);
+  
   useEffect(() => {
-    gsap.from(heroAnimation, {
-      y: 100,
-      opacity: 0,
-    });
-    gsap.to(heroAnimation, {
-      duration: 1.2,
-      y: 0,
-      opacity: 1,
-      stagger: 0.1,
-      ease: Power2,
-    });
-    gsap.from(h3Anim, {
-      y: 100,
-      opacity: 0,
-    });
-    gsap.to(h3Anim, {
-      duration: 1.2,
-      y: 0,
-      opacity: 1,
-      stagger: 0.1,
-      ease: Power2,
-    });
-    gsap.from(h1Anim, {
-      y: 100,
-      opacity: 0,
-    });
-    gsap.to(h1Anim, {
-      duration: 2.5,
-      y: 0,
-      opacity: 1,
-      stagger: 0.6,
-      ease: Power2,
-    });
+    gsap.from(
+      [line1, line2, line3], 
+      {
+        duration: 2.3,
+        delay: 0.8,
+        ease: "power3.out",
+        y: 64,
+        opacity: 0,
+        stagger: {
+          amount: 0.5
+        }
+      }
+      )
   }, []);
   return (
     <div
@@ -48,18 +28,15 @@ export default function Hero() {
       id="main"
     >
       <div className="wrapper">
-        <div className="intro"
-        ref={(hero) => {
-          heroAnimation = hero;
-        }}>
-          <h3 ref={(h3anim) => {
-          h3Anim = h3anim;
+        <div className="intro">
+          <h3 ref={(hero) => {
+          line1 = hero;
         }}>Hi, my name is</h3>
-          <h1 className="name-intro" ref={(h1anim) => {
-          h1Anim = h1anim;
+          <h1 className="name-intro" ref={(hero2) => {
+          line2 = hero2;
         }}>Alex Borges.</h1>
-          <h1 className="name-intro-desc" ref={(h1anim) => {
-          h1Anim = h1anim;
+          <h1 className="name-intro-desc" ref={(hero3) => {
+          line3 = hero3;
         }}>I am a full-stack web developer.</h1>
         </div>
       </div>

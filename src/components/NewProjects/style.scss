@@ -95,16 +95,12 @@ li {
 }
 
 .hover-reveal {
-	position: absolute;
-	width: 400px;
-	height: 400px;
-	top: 50%;
-	left: 50%;
+	position: relative;
+	width: 600px;
+	height: 300px;
 	pointer-events: none;
-	transform: translate(-50%, -50%);
 	overflow: hidden;
-	opacity: 0;
-	transform: scale(0.8);
+	opacity: 1;
 	transition: all .5s ease-out;
 }
 

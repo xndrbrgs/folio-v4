@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import "./style.scss";
+import gsap from 'gsap';
 
 // SVG Imports - Front
 
@@ -24,11 +25,39 @@ import mysqlsvg from './images/mysql-6.svg'
 import graphqlsvg from './images/graphql.svg'
 
 export default function Skills() {
+  let skillsName = useRef(null);
+  let skillsList = useRef(null);
+
+  useEffect(() => {
+    gsap.from(skillsName.current, 
+      {
+        duration: 0.8,
+        delay: 0.8,
+        ease: "power3.out",
+        y: 64,
+        opacity: 0,
+        stagger: {
+          amount: 0.5
+        }
+      }, []);
+    gsap.from(skillsList.current, 
+      {
+        duration: 2.3,
+        delay: 0.8,
+        ease: "power3.out",
+        y: 64,
+        opacity: 0,
+        stagger: {
+          amount: 0.5
+        }
+      }, []);
+  })
+
   return (
     <div className="skills" id="skills" >
       <div>
-        <h1>Skills</h1>
-        <div className="skills-tree" >
+        <h1 ref={skillsName}>Skills</h1>
+        <div ref={skillsList} className="skills-tree" >
           <div className="skill">
             <div className="skill-title">
               <h2>HTML & CSS</h2>

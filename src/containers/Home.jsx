@@ -1,41 +1,41 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 // import LocomotiveScroll from "locomotive-scroll";
-import '../styles/index.scss'
+import { CSSTransition } from "react-transition-group";
 
-// Components 
-import {CustomCursor} from '../CustomCursor'
-import Header from '../components/Header'
-import Footer from '../components/Footer/footer'
+// CSS
+import "../styles/index.scss";
 
-// Pages 
-import Main from '../pages/Main'
-import AboutMe from '../pages/AboutMe'
+// Components
+import Header from "../components/Header";
+import Footer from "../components/Footer/footer";
 
-// Routes 
+// Pages
+import Main from "../pages/Main";
+import AboutMe from "../pages/AboutMe";
+
+// Routes
 const routes = [
-	{ path: '/', name: 'Main', Component: Main },
-	{ path: '/about-me', name: 'AboutMe', Component: AboutMe }
+  { path: "/", name: "Main", Component: Main },
+  { path: "/about-me", name: "AboutMe", Component: AboutMe },
 ];
 
 const Home = () => {
-
   return (
     <>
-	<div>
-      <CustomCursor />
-			<Header />
-			<div className="App">
-				{routes.map(({ path, Component }) => (
-					<Route key={path} exact path={path}>
-						<Component />
-					</Route>
-				))}
-			</div>
-			<Footer />
-	</div>
+      <div>
+        <Header />
+        <div className="App">
+          {routes.map(({ path, Component }) => (
+            <Route key={path} exact path={path}>
+              <Component />
+            </Route>
+          ))}
+        </div>
+        <Footer />
+      </div>
     </>
   );
 };

@@ -2,7 +2,7 @@ import "./style.scss";
 import gsap from "gsap";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import React, { useState, useRef } from "react";
+import React, { useRef, useEffect } from "react";
 
 // images
 
@@ -14,36 +14,35 @@ import Quiz from "./images/quiz.PNG";
 
 
 function Projects() {
-  const link = document.querySelectorAll(".link");
-  const linkHoverReveal = document.querySelectorAll(".hover-reveal");
-  const linkImages = document.querySelectorAll(".hidden-img");
-  
-  for (let i = 0; i < link.length; i++) {
-    link[i].addEventListener("mousemove", (e) => {
-      linkHoverReveal[i].style.opacity = 1;
-      linkHoverReveal[i].style.transform = `translate(-100%, -50% )`;
-      linkImages[i].style.transform = "scale(1, 1)";
-      linkHoverReveal[i].style.left = e.clientX + "px";
-    });
-  
-    link[i].addEventListener("mouseleave", (e) => {
-      linkHoverReveal[i].style.opacity = 0;
-      linkHoverReveal[
-        i
-      ].style.transform = `translate(-50%, -50%) rotate(-5deg)`;
-      linkImages[i].style.transform = "scale(0.8, 0.8)";
-    });
-  }
+  let link = useRef(null);
+  let linkHoverReveal = useRef(null);
+  let linkImages = useRef(null);
+
+  useEffect(() => {
+    gsap.from(
+      link.current, 
+      {
+        duration: 2.3,
+        delay: 0.8,
+        ease: "power3.out",
+        y: 64,
+        opacity: 0,
+        stagger: {
+          amount: 0.5
+        }
+      }
+      )
+  }, []);
 
   return (
-    <div className="projects" data-scroll-section>
+    <div className="projects">
       <div className="heading">
         <h3>Projects</h3>
       </div>
       <nav className="navbar-pro">
         <ul>
           <li>
-            <div className="link">
+            <div ref={link} className="link" >
               <span>The Chronicler</span>
               <div className="links">
                 <p className="descr">
@@ -67,13 +66,13 @@ function Projects() {
                 </div>
               </div>
 
-              <div className="hover-reveal">
-                <img className="hidden-img" src={Chronicler} />
+              <div ref={linkHoverReveal} className="hover-reveal">
+                <img ref={linkImages} className="hidden-img" src={Chronicler} />
               </div>
             </div>
           </li>
           <li>
-            <div className="link">
+            <div ref={link} className="link">
               <span>Lyfe</span>
               <div className="links">
                 <p className="descr">
@@ -96,13 +95,13 @@ function Projects() {
                   </a>
                 </div>
               </div>
-              <div className="hover-reveal">
-                <img className="hidden-img" src={Lyfe} />
+              <div ref={linkHoverReveal} className="hover-reveal">
+                <img ref={linkImages} className="hidden-img" src={Lyfe} />
               </div>
             </div>
           </li>
           <li>
-            <div className="link">
+            <div ref={link} className="link">
               <span>Travelology</span>
               <div className="links">
                 <p className="descr">
@@ -124,13 +123,13 @@ function Projects() {
                   </a>
                 </div>
               </div>
-              <div className="hover-reveal">
-                <img className="hidden-img" src={Travel} />
+              <div ref={linkHoverReveal} className="hover-reveal">
+                <img ref={linkImages} className="hidden-img" src={Travel} />
               </div>
             </div>
           </li>
           <li>
-            <div className="link">
+            <div ref={link} className="link">
               <span>express notetaker</span>
               <div className="links">
                 <p className="descr">
@@ -151,13 +150,13 @@ function Projects() {
                   </a>
                 </div>
               </div>
-              <div className="hover-reveal">
-                <img className="hidden-img" src={Notetaker} />
+              <div ref={linkHoverReveal} className="hover-reveal">
+                <img ref={linkImages} className="hidden-img" src={Notetaker} />
               </div>
             </div>
           </li>
           <li>
-            <div className="link">
+            <div ref={link} className="link">
               <span>js mastery quiz</span>
               <div className="links">
                 <p className="descr">
@@ -180,8 +179,8 @@ function Projects() {
                   </a>
                 </div>
               </div>
-              <div className="hover-reveal">
-                <img className="hidden-img" src={Quiz} />
+              <div ref={linkHoverReveal} className="hover-reveal">
+                <img ref={linkImages} className="hidden-img" src={Quiz} />
               </div>
             </div>
           </li>
