@@ -2,6 +2,7 @@ import "./style.scss";
 import gsap from "gsap";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import React, { useState, useRef } from "react";
 
 // images
 
@@ -11,13 +12,12 @@ import Travel from "./images/travelology.PNG";
 import Notetaker from "./images/notetaker.PNG";
 import Quiz from "./images/quiz.PNG";
 
-import React from "react";
-
-const link = document.querySelectorAll(".link");
-const linkHoverReveal = document.querySelectorAll(".hover-reveal");
-const linkImages = document.querySelectorAll(".hidden-img");
 
 function Projects() {
+  const link = document.querySelectorAll(".link");
+  const linkHoverReveal = document.querySelectorAll(".hover-reveal");
+  const linkImages = document.querySelectorAll(".hidden-img");
+  
   for (let i = 0; i < link.length; i++) {
     link[i].addEventListener("mousemove", (e) => {
       linkHoverReveal[i].style.opacity = 1;
@@ -34,6 +34,7 @@ function Projects() {
       linkImages[i].style.transform = "scale(0.8, 0.8)";
     });
   }
+
   return (
     <div className="projects" data-scroll-section>
       <div className="heading">
@@ -65,6 +66,7 @@ function Projects() {
                   </a>
                 </div>
               </div>
+
               <div className="hover-reveal">
                 <img className="hidden-img" src={Chronicler} />
               </div>
@@ -75,7 +77,11 @@ function Projects() {
               <span>Lyfe</span>
               <div className="links">
                 <p className="descr">
-                Lyfe is a lifestyle tracker, allowing a user to track daily habits to lead towards a better life. The four main components of the Lyfe application are: Exercise, Mindfulness, Nutrition and Water. This four pillars will help you feel better and motivated to conquer every day life.
+                  Lyfe is a lifestyle tracker, allowing a user to track daily
+                  habits to lead towards a better life. The four main components
+                  of the Lyfe application are: Exercise, Mindfulness, Nutrition
+                  and Water. This four pillars will help you feel better and
+                  motivated to conquer every day life.
                 </p>
                 <div className="buttons">
                   <a href="https://github.com/xndrbrgs">

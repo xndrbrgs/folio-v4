@@ -79,8 +79,16 @@ button:hover {
 
 .lineChildren {
     transform: translate(0, 10px);
-  }
+}
 
 .lineChildren {
     overflow: hidden;
-  }
+}
+
+.home-button{
+    transition: all 0.3s ease 0s;
+}
+
+.home-button:hover {
+   color: rgba(0,136,169);
+}
