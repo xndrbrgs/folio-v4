@@ -17,7 +17,7 @@ export default function About() {
     });
 
     gsap.to(split.lines, {
-      duration: 1.6,
+      duration: 2,
       y: 0,
       opacity: 1,
       stagger: 0.1,
