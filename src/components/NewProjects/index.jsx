@@ -53,14 +53,14 @@ function Projects() {
   }, []);
 
   return (
-    <div className="projects">
-      <div ref={projectsTitle} className="heading">
+    <div className="projects" data-scroll-section>
+      <div ref={projectsTitle} className="heading" data-scroll>
         <h3>Projects</h3>
       </div>
       <nav className="navbar-pro">
         <ul>
           <li>
-            <div ref={project1} className="link">
+            <div ref={project1} className="link" data-scroll>
               <span>The Chronicler</span>
               <div className="links">
                 <div className="info">
@@ -96,7 +96,7 @@ function Projects() {
             </div>
           </li>
           <li>
-            <div ref={project2} className="link">
+            <div ref={project2} className="link" data-scroll>
               <span>Lyfe</span>
               <div className="links">
                 <div className="info">
@@ -132,7 +132,7 @@ function Projects() {
             </div>
           </li>
           <li>
-            <div ref={project3} className="link">
+            <div ref={project3} className="link" data-scroll>
               <span>Travelology</span>
               <div className="links">
                 <div className="info">
@@ -162,7 +162,7 @@ function Projects() {
             </div>
           </li>
           <li>
-            <div ref={project4} className="link">
+            <div ref={project4} className="link" data-scroll>
               <span>express notetaker</span>
               <div className="links">
                 <div className="info">
@@ -195,7 +195,7 @@ function Projects() {
             </div>
           </li>
           <li>
-            <div ref={project5} className="link">
+            <div ref={project5} className="link" data-scroll>
               <span>js mastery quiz</span>
               <div className="links">
                 <div className="info">

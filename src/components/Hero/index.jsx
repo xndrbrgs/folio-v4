@@ -26,6 +26,7 @@ export default function Hero() {
     <div
       className="intro-container"
       id="main"
+      data-scroll-section
     >
       <div className="wrapper">
         <div className="intro">

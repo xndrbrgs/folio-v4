@@ -6,6 +6,12 @@
   margin-top: var(--gap-6);
 }
 
+.scroll {
+  &.is-reveal {
+	  opacity: 1;
+	}
+}
+
 .cta {
   display: flex;
   justify-content: space-between;

@@ -14,6 +14,12 @@
   @include media("<=1150px") {
     padding: 40px 0;
   }
+  clip-path: inset(100% 0% 0% 0%);
+	transition: clip-path 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+  
+	&.is-reveal {
+	  clip-path: inset(0% 0% 0% 0%);
+	}
 }
 
 .skills h2 {
@@ -81,4 +87,13 @@
       }
     }
   }
+}
+
+.skills-tree {
+  clip-path: inset(100% 0% 0% 0%);
+	transition: clip-path 2.5s cubic-bezier(0.77, 0, 0.175, 1);
+  
+	&.is-reveal {
+	  clip-path: inset(0% 0% 0% 0%);
+	}
 }

@@ -68,7 +68,7 @@ export default function Header() {
   });
   return (
     <header>
-      <nav className="navbar">
+      <nav className="navbar" data-scroll-section>
         <div className="wrapper">
           <a className="home-button" href="/">
             Home

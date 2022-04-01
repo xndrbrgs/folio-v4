@@ -25,7 +25,7 @@ export default function About() {
     })
   }, [])
   return (
-    <div className="about-me" id="about-me" >
+    <div className="about-me" id="about-me" data-scroll-section>
       <div className="about-wrapper">
         <section className="about-section">
         <h1>Alex Borges</h1>

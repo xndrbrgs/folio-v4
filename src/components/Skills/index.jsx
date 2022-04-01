@@ -54,10 +54,10 @@ export default function Skills() {
   })
 
   return (
-    <div className="skills" id="skills" >
+    <div className="skills" id="skills" data-scroll-section >
       <div>
-        <h1 ref={skillsName}>Skills</h1>
-        <div ref={skillsList} className="skills-tree" >
+        <h1 ref={skillsName} data-scroll>Skills</h1>
+        <div ref={skillsList} className="skills-tree" data-scroll>
           <div className="skill">
             <div className="skill-title">
               <h2>HTML & CSS</h2>
