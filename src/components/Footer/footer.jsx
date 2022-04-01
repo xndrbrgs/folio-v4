@@ -60,21 +60,21 @@ export default function Footer() {
           <div class="leftside-icons">
             <ul class="icons">
               <li>
-                <a href="https://github.com/xndrbrgs">
+                <a href="https://github.com/xndrbrgs" target="_blank">
                   <i class="fab fa-github">
                     <BsGithub id="icon-size" />
                   </i>
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/alexander-borges-75b153226/">
+                <a href="https://www.linkedin.com/in/alexander-borges-75b153226/" target="_blank">
                   <i class="fab fa-linkedin" id="icon-size">
                     <FaLinkedin id="icon-size" />
                   </i>
                 </a>
               </li>
               <li>
-                <a href="#git">
+                <a href="https://drive.google.com/file/d/15SLPQ8P9sh60KYYG03rGJPNrSMwOsB-T/view?usp=sharing" target="_blank">
                   <i class="far fa-file" id="icon-size">
                     <AiOutlineFile id="icon-size" />
                   </i>

@@ -80,7 +80,7 @@ export default function Header() {
             <li>
               <a href="mailto:aborgescolon@gmail.com">Contact Me</a>
             </li>
-            <a className="resume-button" href="#">
+            <a className="resume-button" href="https://drive.google.com/file/d/15SLPQ8P9sh60KYYG03rGJPNrSMwOsB-T/view?usp=sharing" target="_blank">
               <button>Resume</button>
             </a>
           </ul>
