@@ -91,7 +91,7 @@ export default function Header() {
             </li>
             <a
               className="resume-button"
-              href="https://drive.google.com/file/d/1iiI5PaRZMWsCfXOW3KxIvFHGh1ka22Xv/view?usp=sharing"
+              href="https://drive.google.com/file/d/14KqvWc0Dwa6c4xLKJuDDKzPvoPeV3-9W/view?usp=sharing"
               target="_blank"
             >
               <button>Resume</button>
@@ -116,7 +116,7 @@ export default function Header() {
               <a className="modal-link" href="mailto:aborgescolon@gmail.com">Contact Me</a>
               <a
               className="modal-link"
-              href="https://drive.google.com/file/d/1iiI5PaRZMWsCfXOW3KxIvFHGh1ka22Xv/view?usp=sharing"
+              href="https://drive.google.com/file/d/14KqvWc0Dwa6c4xLKJuDDKzPvoPeV3-9W/view?usp=sharing"
               target="_blank"
             >
               Resume
