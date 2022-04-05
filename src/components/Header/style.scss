@@ -1,94 +1,124 @@
-@import '../../styles/breakpoints.scss';
+@import "../../styles/breakpoints.scss";
 
-li, a, button {
-    font-weight: 500;
-    font-size: var(--h5);
-    color: black;
-    text-decoration: none;
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: var(--h5);
+  color: black;
+  text-decoration: none;
 }
 
 .navbar {
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    height: 10rem;
-    
-    .wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 10rem;
 
-        margin: 0 auto;
-        width: 90%;
-        max-width: 1280px;
-        
-        @include media('>=1560px') {
-            max-width: 1520px;
-        }
-       
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+
+    @include media(">=1560px") {
+      max-width: 1520px;
     }
+  }
 
-    .mobile-button {
-        display: none;
+  .mobile-button {
+    display: none;
 
-        @include media('<=800px') {
-            display: flex;
-            max-width: 800px;
-        }
+    @include media("<=800px") {
+      display: flex;
     }
+  }
 }
 
 .nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
-    @include media('<=800px') {
-        display: none;
-    }
+  display: inline-block;
+  padding: 0px 20px;
+  @include media("<=800px") {
+    display: none;
+  }
 }
 
 .resume-button {
-    @include media('<=800px') {
-        display: none;
-    }
+  @include media("<=800px") {
+    display: none;
+  }
 }
 
 .nav_links li a {
-    transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .nav_links li a:hover {
-    color: #0088a9;
+  color: #0088a9;
 }
 
-
 button {
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    transition: all 0.3s ease 0s;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.8);
+  background-color: rgba(0, 136, 169, 0.8);
 }
 
 .lineChildren {
-    transform: translate(0, 10px);
+  transform: translate(0, 10px);
 }
 
 .lineChildren {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-.home-button{
-    transition: all 0.3s ease 0s;
+.home-button {
+  transition: all 0.3s ease 0s;
 }
 
 .home-button:hover {
-   color: rgba(0,136,169);
+  color: rgba(0, 136, 169);
+}
+
+.customOverlay {
+  background: rgba(36, 123, 160, 0.7);
+}
+
+.customModal {
+  width: 80%;
+  max-width: 500px;
+  height: 350px;
+
+  @include media ("<=375px") {
+    height: 300px;
+    }
+}
+
+.modal-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+
+    .modal-link {
+        font-size: var(--h3);
+        padding: 20px 0;
+        transition: all 0.3s ease 0s;
+
+        :hover {
+            background-color: rgba(0, 136, 169, 0.8);
+          }
+    }
 }

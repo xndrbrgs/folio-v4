@@ -1,6 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import gsap from "gsap";
 import SplitText from "../../utils/Split3.min";
+import { AiOutlineMenu } from "react-icons/ai";
+
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 import "./style.scss";
 
 // Href Imports
@@ -11,6 +15,11 @@ import projects from "../ProjectGallery";
 import contact from "../Contact";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
+
   useEffect(() => {
     const split = new SplitText(".nav_links", {
       type: "lines",
@@ -80,13 +89,40 @@ export default function Header() {
             <li>
               <a href="mailto:aborgescolon@gmail.com">Contact Me</a>
             </li>
-            <a className="resume-button" href="https://drive.google.com/file/d/15SLPQ8P9sh60KYYG03rGJPNrSMwOsB-T/view?usp=sharing" target="_blank">
+            <a
+              className="resume-button"
+              href="https://drive.google.com/file/d/15SLPQ8P9sh60KYYG03rGJPNrSMwOsB-T/view?usp=sharing"
+              target="_blank"
+            >
               <button>Resume</button>
             </a>
           </ul>
           <div className="mobile-button">
-            <button></button>
+            <button onClick={onOpenModal}>
+              <AiOutlineMenu size={25} />
+            </button>
           </div>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={open}
+              onClose={onCloseModal}
+              center
+            >
+              <div className="modal-links">
+              <a className="modal-link" href="about-me">About Me</a>
+              <a className="modal-link" href="mailto:aborgescolon@gmail.com">Contact Me</a>
+              <a
+              className="modal-link"
+              href="https://drive.google.com/file/d/15SLPQ8P9sh60KYYG03rGJPNrSMwOsB-T/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
+              </div>
+            </Modal>
         </div>
       </nav>
     </header>
