@@ -105,7 +105,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/15SLPQ8P9sh60KYYG03rGJPNrSMwOsB-T/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1iiI5PaRZMWsCfXOW3KxIvFHGh1ka22Xv/view?usp=sharing"
                   target="_blank"
                 >
                   <i class="far fa-file" id="icon-size">
