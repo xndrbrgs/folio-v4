@@ -65,11 +65,11 @@ function Projects() {
               <div className="links">
                 <div className="info">
                   <p className="descr">
-                    The Chronicler allows users to search a database of 10,000
-                    recommended book based on title, author, and genre to find a
-                    book that they might be interested in reading that they can
-                    then add to their personal collection. This app uses
-                    JavaScript, MySQL, NodeJS, Express, and Bootstrap.
+                    The Chronicler is a database of 10,000 books which allows
+                    users to find similar books based on title, authors, and
+                    genre. Users can also save their newfound books in a
+                    collection section. This app uses JavaScript, MySQL, NodeJS,
+                    Express, and Bootstrap.
                   </p>
                   <p className="note">
                     App hosted on free Heroku server. Please allow 10-15s to
@@ -104,7 +104,7 @@ function Projects() {
                     Lyfe is a lifestyle tracker, allowing a user to track daily
                     habits to lead towards a better life. The four main
                     components of the Lyfe application are: Exercise,
-                    Mindfulness, Nutrition and Water. This four pillars will
+                    Mindfulness, Nutrition and Water. These four pillars will
                     help you feel better and motivated to conquer every day
                     life. This app uses React, GraphQL, Express, and SCSS.
                   </p>

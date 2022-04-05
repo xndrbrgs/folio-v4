@@ -30,7 +30,7 @@ export default function About() {
         <section className="about-section">
         <h1>Alex Borges</h1>
         <p className="bolden-p">
-          I am a full-stack web developer based in Orlando, Florida. I am a Biomedical Sciences graduate passionate about the amazing world of web development.
+          I am an enthusiatic full stack web developer based in Orlando, FL with a strong scientific background as a Biomedical Sciences graduate.
         </p>
         <p className="smaller-p">
           I specialize in creating integrative and intuitive code that enables a placid user experience. 
