@@ -5,7 +5,7 @@
   This is the most recent version of my personal portfolio. It is entirely done in React and is constantly evolving. 
   
   <div align="center">
-  <img src="https://i.ibb.co/7yrbq59/Capture.png" alt="Capture" border="0">
+  <img src="https://i.ibb.co/0nXWQRM/Screen-Shot-2022-04-08-at-11-18-57-AM.png" alt="Capture" border="0">
 </div>
 
   ## Table of Contents
